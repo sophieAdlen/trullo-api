@@ -10,4 +10,4 @@ export interface ITask extends Document {
   finishedBy: Date;
 }
 
-export const Task = mongoose.model<ITask>('Task', TaskSchema);
+export const Task = mongoose.model<ITask>('Task', TaskSchema, 'trullo-task');

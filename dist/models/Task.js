@@ -6,4 +6,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Task = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const schemas_1 = require("../schemas");
-exports.Task = mongoose_1.default.model('Task', schemas_1.TaskSchema);
+exports.Task = mongoose_1.default.model('Task', schemas_1.TaskSchema, 'trullo-task');

@@ -7,7 +7,7 @@ const TaskSchema: Schema = new Schema({
   status: { type: String, enum: ['to-do', 'in progress', 'blocked', 'done'], default: 'to-do' },
   assignedTo: { type: Schema.Types.ObjectId, ref: 'User' },
   createdAt: { type: Date, default: Date.now },
-  finishedBy: { type: Date }
+  finishedBy: { type: String}
 });
 
 // User Schema

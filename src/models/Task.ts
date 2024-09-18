@@ -1,3 +1,4 @@
+
 import mongoose, { Document } from 'mongoose';
 import { TaskSchema } from '../schemas';
 
@@ -7,7 +8,7 @@ export interface ITask extends Document {
   status: string;
   assignedTo: mongoose.Schema.Types.ObjectId;
   createdAt: Date;
-  finishedBy: Date;
+  finishedBy: string;
 }
 
 export const Task = mongoose.model<ITask>('Task', TaskSchema, 'trullo-task');

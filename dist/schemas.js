@@ -9,7 +9,7 @@ const TaskSchema = new mongoose_1.Schema({
     status: { type: String, enum: ['to-do', 'in progress', 'blocked', 'done'], default: 'to-do' },
     assignedTo: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User' },
     createdAt: { type: Date, default: Date.now },
-    finishedBy: { type: Date }
+    finishedBy: { type: String }
 });
 exports.TaskSchema = TaskSchema;
 // User Schema

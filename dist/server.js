@@ -27,5 +27,5 @@ mongoose_1.default.connect(process.env.MONGODB_URI || '')
 app.use('/api/users', userRoutes_1.default);
 app.use('/api/tasks', taskRoutes_1.default);
 // Starta servern
-const PORT = process.env.PORT || 3000; // Använd port från miljövariabler eller standardport 3000
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
